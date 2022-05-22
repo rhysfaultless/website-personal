@@ -72,24 +72,10 @@ const config = {
           }
         ],
       },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            label: 'GitHub',
-            to: 'https://github.com/rhysfaultless'
-          },
-          {
-            label: 'LinkedIn',
-            to: 'https://www.linkedin.com/in/rhysfaultless/'
-          }
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} Rhys Faultless`,
-      },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-      },
+      }
     }),
 };
 
