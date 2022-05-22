@@ -61,8 +61,8 @@ const config = {
             docId: 'notesIndex',
           },
           {
-            to: '/blog', 
-            label: 'Blog', 
+            to: 'bookshelf',
+            label: 'Bookshelf',
             position: 'left'
           },
           {
