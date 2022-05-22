@@ -51,45 +51,41 @@ const config = {
         title: 'Rhys Faultless',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/favicon.png',
         },
         items: [
           {
             label: 'Notes',
             position: 'left',
             type: 'doc',
-            docId: 'intro',
+            docId: 'notesIndex',
           },
           {
-            to: '/blog', 
-            label: 'Blog', 
+            to: 'bookshelf',
+            label: 'Bookshelf',
             position: 'left'
           },
           {
             to: 'about',
             label: 'About',
             position: 'left'
-          }
-        ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            label: 'GitHub',
-            to: 'https://github.com/rhysfaultless'
           },
           {
+            to: 'https://github.com/rhysfaultless',
+            label: 'GitHub',
+            position: 'right',
+          },
+          {
+            to: 'https://www.linkedin.com/in/rhysfaultless/',
             label: 'LinkedIn',
-            to: 'https://www.linkedin.com/in/rhysfaultless/'
+            position: 'right'
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Rhys Faultless`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-      },
+      }
     }),
 };
 
