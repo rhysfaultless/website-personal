@@ -69,6 +69,16 @@ const config = {
             to: 'about',
             label: 'About',
             position: 'left'
+          },
+          {
+            to: 'https://github.com/rhysfaultless',
+            label: 'GitHub',
+            position: 'right',
+          },
+          {
+            to: 'https://www.linkedin.com/in/rhysfaultless/',
+            label: 'LinkedIn',
+            position: 'right'
           }
         ],
       },
