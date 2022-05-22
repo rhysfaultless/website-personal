@@ -14,16 +14,16 @@ hide_table_of_contents: false
 - Layout Workbook, A real world guide to building pages in graphic design
 - Growth Hacker
 - Trust Me I'm Lying
-- Notes on the Synthesis of Form
+- **Notes on the Synthesis of Form**
 - Visual Explanations, Images and Quantities, Evidence and Narrative
-- Zag
+- **Zag**
 - Pre-Suasion
 - How To Win Friends And Influence People
 - To Sell Is Human
 
 ## Innovation
-- Creativity, Inc
-- The Idea Factory—Bell Labs And The Great Age Of American Innovation
+- **Creativity, Inc**
+- **The Idea Factory—Bell Labs And The Great Age Of American Innovation**
 - The Tipping Point—How Little Things Can Make a Big Difference
 - How Innovation Works
 - The Dream Machine
@@ -41,8 +41,9 @@ hide_table_of_contents: false
 - The Elements Of Style
 - Draft No. 4—On the Writing Process
 - On Writing Well
-- Writing Tools
+- **Writing Tools**
 - The Art Of Dramatic Writing
+- **On Writing: A Memoir of the Craft**
 
 ## Thinking
 - The Great Mental Models, 1, General Thinking Concepts
@@ -61,24 +62,24 @@ hide_table_of_contents: false
 - The Black Swan, The Impact of the Highly Improbable
 
 ## Systems
-- The Art Of Doing Science And Engineering, Learning To Learn
+- **The Art Of Doing Science And Engineering, Learning To Learn**
 - Thinking in Systems, A Primer
 
 ## Management
-- An Elegant Puzzle, Systems of Engineering Management
+- **An Elegant Puzzle, Systems of Engineering Management**
 - Tribal Leadership—Leveraging Natural Groups To Build A Thriving Organization
 - The 7 Habits of Highly Effective People
 - Radical Candor
 - Peopleware, Productive Projects and Teams
 - The Checklist Manifesto
 - Only The Paranoid Survive
-- High Output Management
+- **High Output Management**
 - The Hard Thing About Hard Things
 - What You Do Is Who You Are
-- The Mythical Man Month
+- **The Mythical Man Month**
 - Say it with Charts
 - Multipliers, How the Best Leaders Make Everyone Smarter
-- The Phoenix Project
+- **The Phoenix Project**
 - The Goal
 - Getting Things Done
 - A Guide to the Project Management Body of Knowledge
