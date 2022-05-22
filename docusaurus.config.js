@@ -58,7 +58,7 @@ const config = {
             label: 'Notes',
             position: 'left',
             type: 'doc',
-            docId: 'intro',
+            docId: 'notesIndex',
           },
           {
             to: '/blog', 
