@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Rhys Faultless',
-  url: 'https://your-docusaurus-test-site.com',
+  url: '/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -51,7 +51,7 @@ const config = {
         title: 'Rhys Faultless',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/favicon.png',
         },
         items: [
           {
