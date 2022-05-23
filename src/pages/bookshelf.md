@@ -127,6 +127,7 @@ I have not included fiction, except where the stories are relevant to engineerin
 - Configuration Management, Best Practices
 - Pactical CM, Best Configuration Management Practices
 - NASA System Engineering Handbook
+- Donne Martin, and others [System Design Primer](https://github.com/donnemartin/system-design-primer)
 
 ## Other
 
@@ -161,3 +162,31 @@ I have not included fiction, except where the stories are relevant to engineerin
 - Astrophysics For People In A Hurry
 - Relativity : the Special and General Theory: Original Version
 - The Grand Design
+
+
+## Articles
+
+- Ben Horowitz | [Can Do vs. Can't Do Cultures](https://a16z.com/2014/02/06/6147/)
+- Melanie S. Brucks, Jonathan Levav | [Virtual communication curbs creative idea generation](https://www.nature.com/articles/s41586-022-04643-y)
+- Tekla S. Perry, Paul Wallich | [Creating the Commodore 64: The Engineers’ Story](https://spectrum.ieee.org/amp/commodore-64-2656808350)
+-  Anna Wiener | [Does tech need a new narrative?](https://www.newyorker.com/news/letter-from-silicon-valley/does-tech-need-a-new-narrative#intcid=_the-new-yorker-amp-bottom-recirc_68941b0d-2a97-4759-b37a-d2e20a1016ca_text2vec1)
+- Marc Andressen | [It's time to build](https://future.a16z.com/its-time-to-build/)
+- Nate Seidle | [15 Years of SparkFun](https://www.sparkfun.com/news/2571)
+- Jaime Arredondo | [How Adafruit grew over 700% for 3 years in a row making open source hardware](https://boldandopen.com/adafruit-case-study/)
+- Richard Huskey | [Why does experiencing “flow” feel so good? A communication scientist explains](https://bigthink.com/neuropsych/creative-flow/)
+- Emmarie Hodge | [You Don’t Read as Many Books as You Think You Do](https://medium.com/no-echo/you-dont-read-as-many-books-as-you-think-you-do-199440d2cb32#:~:text=According%20to%20the%20Pew%20Research,Americans%20reading%204%20or%20less.)
+- Caitlin Flanagan | [I’ll tell you the secret of cancer](https://www.theatlantic.com/health/archive/2021/08/caitlin-flanagan-secret-of-surviving-cancer/619844/)
+- Byrne Hobart | [Writing is Networking for Introverts](https://byrnehobart.medium.com/writing-is-networking-for-introverts-5cac14ad4c77)
+- John Selawsky | [Keep Calm and Start Coding: How to Fight Coding Anxiety](https://levelup.gitconnected.com/keep-calm-and-start-coding-how-to-fight-coding-anxiety-dee06efd8b9c)
+- Maria Popova | [Umberto Eco’s Antilibrary: Why Unread Books Are More Valuable to Our Lives than Read Ones](https://www.themarginalian.org/2015/03/24/umberto-eco-antilibrary/)
+
+## Blogs
+
+- [Farnam Street](https://fs.blog/)
+- [Irrational Exuberance](https://lethain.com/)
+- [The Pragmatic Engineer](https://www.pragmaticengineer.com/)
+- [Stratechery](https://stratechery.com/)
+
+## Video
+
+- Paul Sen | [Steve Jobs, the lost interview](https://en.wikipedia.org/wiki/Steve_Jobs:_The_Lost_Interview)
