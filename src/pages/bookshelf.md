@@ -6,46 +6,11 @@ hide_table_of_contents: false
 
 # Bookshelf
 
-## Design
-- Change By Design
-- The Designer's Dictionary of Color
-- The Designer's Dictionary of Type
-- Hooked, How to Builde Habit Forming Products
-- Layout Workbook, A real world guide to building pages in graphic design
-- Growth Hacker
-- Trust Me I'm Lying
-- **Notes on the Synthesis of Form**
-- Visual Explanations, Images and Quantities, Evidence and Narrative
-- **Zag**
-- Pre-Suasion
-- How To Win Friends And Influence People
-- To Sell Is Human
-
-## Innovation
-- **Creativity, Inc**
-- **The Idea Factory—Bell Labs And The Great Age Of American Innovation**
-- The Tipping Point—How Little Things Can Make a Big Difference
-- How Innovation Works
-- The Dream Machine
-- The Code Breaker
-- The Art Of Innovation, Lessons in Creativity from IDEO, America's Leading Design Firm
-- Diffusion Of Innovations
-- Turning The Flywheel
-- The Rational Optimist
-- The Innovators, How a Group of Hackers, Geniuses, and Geeks Created the Digital Revolution
-- Losing The Signal
-- The Tipping Point, How Little Things Can Make a Big Difference
-- Flesh and Machines
-
-## Writing
-- The Elements Of Style
-- Draft No. 4—On the Writing Process
-- On Writing Well
-- **Writing Tools**
-- The Art Of Dramatic Writing
-- **On Writing: A Memoir of the Craft**
+I have not included fiction, except where the stories are relevant to engineering.
+<br />
 
 ## Thinking
+
 - The Great Mental Models, 1, General Thinking Concepts
 - The Great Mental Models, 2, Physics Chemistry And Biology
 - The Great Mental Models, 3, Systems And Mathematics
@@ -61,11 +26,25 @@ hide_table_of_contents: false
 - Thinking In Time, The Uses Of History For Decision Makers
 - The Black Swan, The Impact of the Highly Improbable
 
-## Systems
-- **The Art Of Doing Science And Engineering, Learning To Learn**
-- Thinking in Systems, A Primer
+## Innovation
+
+- **Creativity, Inc**
+- **The Idea Factory—Bell Labs And The Great Age Of American Innovation**
+- The Tipping Point—How Little Things Can Make a Big Difference
+- How Innovation Works
+- The Dream Machine
+- The Code Breaker
+- The Art Of Innovation, Lessons in Creativity from IDEO, America's Leading Design Firm
+- Diffusion Of Innovations
+- Turning The Flywheel
+- The Rational Optimist
+- The Innovators, How a Group of Hackers, Geniuses, and Geeks Created the Digital Revolution
+- Losing The Signal
+- The Tipping Point, How Little Things Can Make a Big Difference
+- Flesh and Machines
 
 ## Management
+
 - **An Elegant Puzzle, Systems of Engineering Management**
 - Tribal Leadership—Leveraging Natural Groups To Build A Thriving Organization
 - The 7 Habits of Highly Effective People
@@ -84,8 +63,37 @@ hide_table_of_contents: false
 - Getting Things Done
 - A Guide to the Project Management Body of Knowledge
 - Storytelling With Data
+- **Three Sigma Leadership, Or The Way Of The Chief Engineer**
+
+## Design
+
+- **The Art Of Doing Science And Engineering, Learning To Learn**
+- Thinking in Systems, A Primer
+- Change By Design
+- The Designer's Dictionary of Color
+- The Designer's Dictionary of Type
+- Hooked, How to Builde Habit Forming Products
+- Layout Workbook, A real world guide to building pages in graphic design
+- Growth Hacker
+- Trust Me I'm Lying
+- **Notes on the Synthesis of Form**
+- Visual Explanations, Images and Quantities, Evidence and Narrative
+- **Zag**
+- Pre-Suasion
+- How To Win Friends And Influence People
+- To Sell Is Human
+
+## Writing
+
+- The Elements Of Style
+- Draft No. 4—On the Writing Process
+- On Writing Well
+- **Writing Tools**
+- The Art Of Dramatic Writing
+- **On Writing: A Memoir of the Craft**
 
 ## Ideology
+
 - Meditations
 - Epictetus, Discourses and Selected Writings
 - Seneca, Letters From A Stoic
@@ -93,6 +101,7 @@ hide_table_of_contents: false
 - A Nation Of Immigrants
 
 ## Biography, Memoir, Events
+
 - The Man Who Fed The World—And His Battle To End World Hunger
 - Skunk Works
 - The Autobiography of Malcom X
@@ -113,17 +122,14 @@ hide_table_of_contents: false
 - Long Walk To Freedom
 - Permanent Recort
 
-## Physics
-- Fundamentals Of Astrodynamics
-- Astrophysics For People In A Hurry
-- Relativity : the Special and General Theory: Original Version
-- The Grand Design
-
 ## Reference
+
 - Configuration Management, Best Practices
 - Pactical CM, Best Configuration Management Practices
+- NASA System Engineering Handbook
 
 ## Other
+
 - Silent Spring
 - The Origin Of The Species
 - Everything and More—A Compact History of Infinity
@@ -151,3 +157,7 @@ hide_table_of_contents: false
 - Seeds Of Science
 - On The Origin Of Species
 - Freakonomics, A Rogue Economist Explores the Hidden Side of Everything
+- Fundamentals Of Astrodynamics
+- Astrophysics For People In A Hurry
+- Relativity : the Special and General Theory: Original Version
+- The Grand Design
