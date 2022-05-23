@@ -4,4 +4,23 @@ sidebar_position: 3
 
 # Interface Controls
 
+- Places where subassemblies or subsystems meet
+- typically they are agreed on points of exchange between design elements
+- this allows different design-teams to work in isolation, with minimal communication overhead
+- examples
+  - Boeing 787 picture, wings attach to fuselage
+    - constraints
+      - allowable deflection
+      - allowable mass and CofG
+      - allowable space claim
+      - fastening points
+      - electrical power connectors
+      - data connectors
+      - fuselage form
+      - data protocol and structure
+      - fuel line connectors and their positions
+    - requirements
+      - required lift force
+      - required fuel capacity
+
 
