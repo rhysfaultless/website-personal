@@ -1,7 +1,7 @@
 ---
 title: About
 description: a description of this site and me
-hide_table_of_contents: true
+hide_table_of_contents: false
 ---
 
 # About
