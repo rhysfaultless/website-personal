@@ -3,3 +3,52 @@ sidebar_position: 1
 ---
 
 # Bundles
+
+Bundles a collection of items that are purchased using a single manufactuerer number.
+Most consumer goods are sold as a bundle.
+Consider a new laptop computer.
+It is sold in a box, which contains:
+
+- The computer
+- A charge cable
+- Startup instructions, or similar leaflet
+- Foam or cardboard packaging insert
+- A plasic bag for the computer
+
+A bundle lets us assign a unique item number to each object in the delivered box:
+
+| Item Number | Item Name        | Manufacturer Item Number | Quantity | 
+| ----------- | ---------------- | ------------------------ | -------- |
+| 1000        | Bundle, Computer | A000-ND                  | 1        |
+| - 1001      | Cardboard Box    |                          | 1        |
+| - 1002      | Computer         |                          | 1        |
+| - 1003      | Instructions     |                          | 1        |
+| - 1004      | Charge Cable     |                          | 1        |
+| - 1005      | Packaging Insert |                          | 1        |
+| - 1006      | Plastic Bag      |                          | 1        |
+
+In a detail-assembly drawing or a work-instruction, we can point to the individual objects that come in the bundle, and specify where the items should be placed in inventory. 
+Certain items may be discarded, so you could choose to simply have a note stating to throw it away, rather than creating a unique Item Number, and logging it as inventory. 
+This step seems trivial, but having a debundling procedure gives you more flexibility when working with the individual parts.
+
+- The individual items can be tracked in inventory separately, minimizing lost parts
+- Individual items can be sent for Quality Control checks
+- The parts can be consumed in different subassembly work-instructions
+- Items can easily be called for in Altered Item drawings, such as cutting the end off a charge cable
+- Onboarding, training, and outsourcing are simpler, since all the work-instructions are recorded
+
+
+## Keyed Items in a Bundle
+This bundling method works well for most consumer items, but does not work well when there is a dependency between items. Some examples include:
+
+- A door lock, and it's related key
+- A remote control car, and it's paired remote
+- An SSH public-key, and private-key
+
+In these situations, you do not want to place the related items in separate inventory bins since nothing ensures that they will remain tied to the same serial-number of the Finished Good that you sell. 
+To inventory these paired-items, you can either keep them in the original bundle, or you can create a new assembly with the keyed-items and some packaging (plastic bag, or cable-tie).
+When designing your product, you want both of the keyed-items to be consumed at the same work station at the same time.
+This moves both of the keyed-items for inventory, to work-in-progress at the same time.
+When you cannot find a design that co-locates both keyed-items in an assembly, you should still package the outlier with the subassembly.
+If you are assembling a door with its hinges and lock, you can use a cable tie to hold the key to the door handle. 
+This may not be the final form of the Finished Good that you sell, but this interim subassembly will keep the keyed-items co-located in Inventory and WIP states. 
