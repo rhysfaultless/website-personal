@@ -24,10 +24,20 @@ A wiring diagram will show a box for each of the subassemblies, but should inclu
 
 [//]: # (TODO, add a drawing of the system)
 
-This wiring diagram shows the interconnectons between these subassembies in the system, and how they interface with elements at the edge of the system. Notice that the Speaker and Microphone share a common audio jack on the computer. I don't think this is indicative of a real computer setup, but was a way to show a wye-cable / wiring-harness in a block diagram.
+This wiring diagram shows the interconnectons between these subassembies in the system, and how they interface with elements at the edge of the system. Notice that the Speaker and Microphone share a common audio jack on the computer. 
+I don't think this is indicative of a real computer setup, but was a way to show a wye-cable / wiring-harness in a block diagram.
 
-A wiring diagram does not show details of the subassemblies, or of the cables themselves. Their purpose is at a high level to see all the physical interconnections between subassemblies. This means a wiring diagram is not sufficient to show the dependencies between subassemblies in software. Here are two examples of wiring diagrams, which cannot show how data is passed beteen hardware devices.
+A wiring diagram does not show details of the subassemblies, or of the cables themselves. 
+Their purpose is at a high level to see all the physical interconnections between subassemblies. 
+This means a wiring diagram is not sufficient to show the dependencies between subassemblies in software. 
+Here are two examples of wiring diagrams, which cannot show how data is passed beteen hardware devices.
 
 [//]: # (TODO, add a drawing of a ethernet switch with devices connected to it. dotted line for data)
 
 [//]: # (TODO, add a drawing of a 3 node CANbus, with the middle device having two jacks)
+
+## what is the purpose of a wiring diagram
+
+A wiring diagram should be the top level hardware drawing for the system.
+It has item-number-balloons or find-number-balloons indicating the necessary subassemblies, cables, and harnesses.
+These items and quantities should be aligned with the parts list for the top level item being described.
