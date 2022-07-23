@@ -19,10 +19,10 @@ You define the size, colour, and position of each these elements.
 1.  Add jsPDF to your pacakage.json, and run npm install.
 2.  In a new JavaScript file, import jsPDF.
     ```javascript
-    import { jsPDF, HTMLOptionImage } from "jspdf"; 
+    import { jsPDF, HTMLOptionImage } from "jspdf";
     ```
 3.  Import any JSON or image paths that you may need in the script.
-4.  Create a new jsPDF document. 
+4.  Create a new jsPDF document.
     _doc_ is a common name for a jsPDF document, but you can choose a different name for the constant.
     This creates a standard PDF document (letter size paper, portrait orientation, millimetre units)
     You can change these defaults by adding options inside the parenthesis.
@@ -59,17 +59,20 @@ You define the size, colour, and position of each these elements.
     // note that this image file is 1479 X 375 pixels
     ```
 10. Add a screenshot image.
+
     ```javascript
     var screenshotImageData = props.screenshotData; // props since this is in React
     if (screenshotImageData != null) {
       const screenshotProperties = doc.getImageProperties(screenshotImageData);
       const screenshotWidth = 140;
       const screenshotAspect = screenshotProperties.height / screenshotProperties.width;
-      doc.addImage(screenshotImageData, "JPEG", 40, 60, screenshotWidth, (screenshotWidth * screenshotAspect));
+      doc.addImage(screenshotImageData, "JPEG", 40, 60, screenshotWidth, screenshotWidth * screenshotAspect);
     }
     ```
+
     The screenshot data in this example was passed to jsPDF with a React props, screenshotImageData.
     The other JavaScript file that created the screenshot data included the library [html2canvas](https://github.com/niklasvh/html2canvas).
+
     ```javascript
     import ButtonPdf from "/components/ButtonPdf"
     import html2canvas from "html2canvas";
@@ -99,6 +102,7 @@ You define the size, colour, and position of each these elements.
       )
     }
     ```
+
 11. Save the PDF.
     ```javascript
     doc.save("generated PDF");
