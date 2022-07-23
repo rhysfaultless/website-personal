@@ -1,8 +1,4 @@
 {
   "label": "Systems",
-  "position": 2,
-  "link": {
-    "type": "generated-index",
-    "description": "Notes on systems design and engineering"
-  }
+  "position": 2
 }
