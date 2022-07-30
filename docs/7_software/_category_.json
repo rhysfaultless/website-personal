@@ -1,8 +1,0 @@
-{
-  "label": "Software",
-  "position": 7,
-  "link": {
-    "type": "generated-index",
-    "description": "Notes on software design and engineering"
-  }
-}

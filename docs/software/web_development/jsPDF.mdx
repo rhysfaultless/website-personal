@@ -1,0 +1,109 @@
+---
+sidebar_position: 6
+---
+
+# jsPDF
+
+[jsPDF](https://github.com/parallax/jsPDF) is a library that lets you create PDFs on a clent computer.
+PDFs are constructed with a few elements:
+
+1. Strings of text
+2. Lines
+3. Polygons
+4. Images
+
+You define the size, colour, and position of each these elements.
+
+## Process (with React syntax)
+
+1.  Add jsPDF to your pacakage.json, and run npm install.
+2.  In a new JavaScript file, import jsPDF.
+    ```javascript
+    import { jsPDF, HTMLOptionImage } from "jspdf";
+    ```
+3.  Import any JSON or image paths that you may need in the script.
+4.  Create a new jsPDF document.
+    _doc_ is a common name for a jsPDF document, but you can choose a different name for the constant.
+    This creates a standard PDF document (letter size paper, portrait orientation, millimetre units)
+    You can change these defaults by adding options inside the parenthesis.
+    ```javascript
+    const doc = new jsPDF();
+    ```
+5.  Set your font.
+    ```javascript
+    doc.setFont("helvetica");
+    ```
+6.  Add text.
+    ```javascript
+    doc.setFontSize(14);
+    doc.setTextColor(200, 0, 0); // make text red, with rgb
+    doc.text(20, 16, "DRAFT"); // X=20 mm, Y=16 mm
+    ```
+7.  Add a horizontal line.
+    ```javascript
+    doc.setDrawColor(0);
+    doc.setLineWidth(0.2);
+    doc.line(20, 50, 200, 50); // [X1=20 mm, Y1=50 mm] , [X2=200 mm, Y2=50 mm]
+    ```
+8.  Add a rectangle.
+    ```javascript
+    doc.setDrawColor(0);
+    doc.setFillColor(69, 69, 69);
+    doc.rect(20, 60, 200, 100, "F"); // [X1=20 mm, Y1=60 mm] , [X2=200 mm, Y2=100 mm] , filled
+    ```
+9.  Add an image.
+    ```javascript
+    var image = new Image();
+    image.src = "/public/images/icon.jpg";
+    doc.addImage(image, "JPEG", 135, 16, 1479 / 25, 375 / 25); // [X, Y] , [Xsize, Ysize]
+    // note that this image file is 1479 X 375 pixels
+    ```
+10. Add a screenshot image.
+
+    ```javascript
+    var screenshotImageData = props.screenshotData; // props since this is in React
+    if (screenshotImageData != null) {
+      const screenshotProperties = doc.getImageProperties(screenshotImageData);
+      const screenshotWidth = 140;
+      const screenshotAspect = screenshotProperties.height / screenshotProperties.width;
+      doc.addImage(screenshotImageData, "JPEG", 40, 60, screenshotWidth, screenshotWidth * screenshotAspect);
+    }
+    ```
+
+    The screenshot data in this example was passed to jsPDF with a React props, screenshotImageData.
+    The other JavaScript file that created the screenshot data included the library [html2canvas](https://github.com/niklasvh/html2canvas).
+
+    ```javascript
+    import ButtonPdf from "/components/ButtonPdf"
+    import html2canvas from "html2canvas";
+
+    const [screenshotDataState, changeScreenshotDataState] = useState(null); // React State to hold the screenshot data
+
+    function Page() {
+      function UpdateScreenshotData() {
+        const input = document.getElementById("divToPrint");
+        html2canvas(input).then((canvas) => {
+          changeScreenshotDataState(canvas.toDataURL("image/jpeg"));
+        });
+      }
+
+      return (
+        <div id="divToPrint">
+          <p>We will take a screenshot of this div</p>
+        </div>
+
+        <div className="px-5" onMouseOver={() => UpdateScreenshotData()}>
+          <ButtonPdf
+            robotPlatform={robotPlatformDataLabel}
+            colourState={colourSelectionState}
+            screenshotData={screenshotDataState}
+          />
+        </div>
+      )
+    }
+    ```
+
+11. Save the PDF.
+    ```javascript
+    doc.save("generated PDF");
+    ```

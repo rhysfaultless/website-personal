@@ -50,7 +50,7 @@ const config = {
             label: 'Notes',
             position: 'left',
             type: 'doc',
-            docId: 'notesIndex',
+            docId: 'index_notes',
           },
           {
             to: 'bookshelf',
