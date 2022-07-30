@@ -1,8 +1,4 @@
 {
   "label": "Items",
-  "position": 1,
-  "link": {
-    "type": "generated-index",
-    "description": "Notes on types of Items and Parts"
-  }
+  "position": 1
 }
