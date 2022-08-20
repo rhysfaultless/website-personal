@@ -37,30 +37,68 @@ const config = {
   ],
 
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
         title: 'Rhys Faultless',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Rhys Faultless',
           src: 'img/favicon.png',
         },
         items: [
           {
-            label: 'Notes',
-            position: 'left',
-            type: 'doc',
-            docId: 'index_notes',
+            to: '/docs/cm/index_configuration_management',
+            label: 'CM',
+            position: 'left'
           },
           {
-            to: 'bookshelf',
-            label: 'Bookshelf',
+            to: '/docs/systems/overview_systems',
+            label: 'Systems',
+            position: 'left'
+          },
+          {
+            to: '/docs/mechanical/overview_mechanical',
+            label: 'Mechanical',
+            position: 'left'
+          },
+          {
+            to: '/docs/electrical/overview_electrical',
+            label: 'Electrical',
+            position: 'left'
+          },
+          {
+            to: '/docs/building/overview_building',
+            label: 'Build',
+            position: 'left'
+          },
+          {
+            to: '/docs/networking/overview_networking',
+            label: 'Networking',
+            position: 'left'
+          },
+          {
+            to: '/docs/software/overview_software',
+            label: 'Software',
+            position: 'left'
+          },
+          {
+            to: '/docs/web_development/overview_web_development',
+            label: 'Web Dev',
+            position: 'left'
+          },
+          {
+            to: '/docs/tools/overview_tools',
+            label: 'Tools',
             position: 'left'
           },
           {
             to: 'about',
             label: 'About',
-            position: 'left'
+            position: 'right'
+          },
+          {
+            to: 'bookshelf',
+            label: 'Bookshelf',
+            position: 'right'
           },
           {
             to: 'https://github.com/rhysfaultless',
@@ -73,6 +111,15 @@ const config = {
             position: 'right'
           }
         ],
+      },
+      docs: {
+        sidebar: {
+          autoCollapseCategories: true,
+          hideable: true
+        },
+      },
+      footer: {
+        copyright: `Copyright © 2022 Rhys Faultless All rights reserved.`
       },
       prism: {
         theme: lightCodeTheme,
