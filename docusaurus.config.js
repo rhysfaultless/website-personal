@@ -46,7 +46,7 @@ const config = {
         },
         items: [
           {
-            to: '/docs/cm/index_configuration_management',
+            to: '/docs/cm/overview_configuration_management',
             label: 'CM',
             position: 'left'
           },
