@@ -1,0 +1,170 @@
+---
+sidebar_position: 1
+title: Configuration Management
+sidebar_label: Overview
+---
+
+import ComponentSystemScoping from "/docs_components/systems_project_scoping.mdx";
+
+Technical dept is like entropy, slowly making more disorder to a project.
+There are many forms that technical dept can take, but one of the large reasons is due to lack of Configuration and Data Management.
+
+Configuration Management is documenting a product through its lifecycle, including:
+
+- [Project Scoping](#overview_configuration_management_project_scoping)
+- [Design](#overview_configuration_management_design)
+- [Build](#overview_configuration_management_build)
+- [Testing](#overview_configuration_management_testing)
+- [Deployment, Servicing, and Retirement](#overview_configuration_management_deployment)
+- [Updates and Upgrades](#overview_configuration_management_updates)
+- [Obsolescence](#overview_configuration_management_obsolenscence)
+
+The key is finding a lightweight set of tools and processes that promotes good record keeping.
+
+---
+
+## Project Scoping {#overview_configuration_management_project_scoping}
+
+:::note
+
+Refer to the [Systems](/docs/systems/overview_systems) page for further details about starting a robotics project.
+
+:::
+
+<ComponentSystemScoping />
+
+There are several tasks in this list that will require you to create some documentation.
+You should be saving these documents as files in your PLM tool, against the Item that they are related to.
+This Item could be the top level assembly that you intend to create, or one of its children sub-assemblies.
+
+---
+
+## Design {#overview_configuration_management_design}
+
+### PLM
+
+Your project should include a Product-Lifecycle-Management (PLM) tool.
+This is some way of creating unique Item Numbers to store the items related information:
+
+- Item Number
+- Item Name
+- Revision
+- Files, which can including drawings, datasheets, source CAD, and other technical documentation
+- Sourcing information, including distributors and suppliers
+- Bill-Of-Materials if the Item is an assembly comprised of other Items from your project
+
+A spreadsheet can be used to track this information, but you can save a significant amount of time by using PLM software even for small projects.
+
+### Data Management
+
+Common datamanagement practices for revision controlling data include:
+
+- Mechancal source CAD, using PDM software
+- Electrical CAD using SVN software
+- Mechanical and Electrical source CAD, using Windows File Explorer, naming files with the Item Number and revision
+- Software source using Git
+- Manuals using Git, or a version controlling wordprocessor like Google Docs
+
+---
+
+## Build {#overview_configuration_management_build}
+
+### Quality Control
+
+When parts enter your facility, you can perform Quality Control checks to confirm that the incoming parts form meets the technical reqirements you listed for the related Item.
+
+For example: if you order a _M4×0.7 X 10 Round Head Stainless Steel Screw_ you expect it to conform to the standard ISO 7380.
+The rigor of you checks should depend on how critical you project's application is.
+For this example, it may be acceptable to visually check that:
+
+- The packaging says it containts _M4×0.7 X 10 Round Head Stainless Steel Screws_
+- The screws have threads
+- The screws have a hex cutout for tightening them
+- The head diameter is less than Ø8 mm
+
+After these checks you can place the incoming parts in a bin labeled with your Item Number for _M4×0.7 X 10 Round Head Stainless Steel Screws_.
+
+### Revisions Through Build
+
+A Item Number should be uniquie, and have a defined set of requirements.
+These defined requirements are what let you know that a physical object can be called _Project Item XXXXXX_.
+Similarly, the assmbly you intend to build will have a unique Item Number.
+
+:::note
+
+A unique assembly is not synonymous with a Marketing Product Name.
+For example, you can configure a MacBook Pro with different components, such as Screensizes, Colour, Processor, RAM, and Storage.
+These different configured assembles would have their own uniquie Item Numbers or SKUs.
+MacBook Pro does not define a unique Item, but covers a range of varaiants.
+
+_MacBook Pro is a trademark of Apple Inc._
+
+:::
+
+As you build your assmebly, you may notice issues with the inteded design, such as a hole being too small, or a connector having an non-ideal pinout.
+You should update your design if you decide to deviate from the design to make a more ideal assembly.
+Updates can be made by revising an existing Item, or be creating a new Item in your PLM system.
+
+Be cognizant of your revision process, and try to make it simple enough to promote making design updates, while maintinging good records of the product history.
+
+---
+
+## Testing {#overview_configuration_management_testing}
+
+Your test plans will have been deined in the [Project Scoping](#overview_configuration_management_project_scoping) stage of the project.
+It will depend on the rigor of your project of how you document that you have run tests, with artifacts of the results.
+As a lightwight option, you could use a tool like [Jira](https://www.atlassian.com/software/jira) or [Trello](https://trello.com/) for each test, and then save hyperlinks of these tickets to your PLM tool.
+Heavier, more thorough options include tools like [IBM's DOORS](https://www.ibm.com/docs/en/ermd/9.7.0?topic=overview-doors) or [Jama's Connect](https://www.jamasoftware.com/).
+
+Overall, you want to run tests, document what the results were, and then cause some action to the project:
+
+1. Accept the design as-is since it successfully completed the test
+2. Accept the design as-is, noting that the design does not comply with the initial requirements.
+3. Redesign and build aspects of the assembly, and then test it again to see if it is compliant with the initial requirements.
+
+---
+
+## Deployment and Servicing and Reirement {#overview_configuration_management_deployment}
+
+Depending on your application, you may want to track each fielded unit that has been build.
+For example, cars have a unique Vehicle Identification Number (VIN) that includes information like, when it was manufactured, and the variant of it (colour, engine size, interior options, etc).
+Manufacturers maintain a database of every VIN. 
+This database includes:
+
+- Who owns the vehicle with this VIN, and how to contact this person
+- The shipped configuration of the vehicle
+- The intended configuration of the vehicle
+- The current configuration of the vehicle
+
+This allows manufacturers to contact owners who should replace a component due to a safety recall.
+
+:::note
+
+There are other reasons for VINs and Serial Numbers.
+This example is intended to show how Serial Numbers are used for configuration management of Items through their lifecycle.
+
+:::
+
+---
+
+## Updates and Upgrades {#overview_configuration_management_updates}
+
+Updates are either:
+
+1. A change where both old configuration or the new one are interchangeable.
+2. A change to the design, where all fielded assembles get updated to match the new design.
+3. A change to the design, where some of the fielded assemblies get updated, where the new design is an upgrade.
+
+A new revision of the affected assemblies is the accepted practice for scenarios 1 and 2.
+Typically, a new top level Item would be created for scenario 3, since it is effectively a new product variant.
+
+---
+
+## Obsolescence {#overview_configuration_management_obsolenscence}
+
+There are a few reasons you may want to document when designs are considered obsolete:
+
+- For safety or regulatory reasons
+- To discourage people from building obsolete designs
+- To redirect people to replacement designs
+- To help identify and dispose of unused child Items from inventory
