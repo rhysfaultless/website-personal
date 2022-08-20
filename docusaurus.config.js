@@ -91,13 +91,13 @@ const config = {
             position: 'left'
           },
           {
-            to: 'about',
-            label: 'About',
-            position: 'right'
+            to: '/docs/reference/overview_reference',
+            label: 'Reference',
+            position: 'left'
           },
           {
-            to: 'bookshelf',
-            label: 'Bookshelf',
+            to: 'about',
+            label: 'About',
             position: 'right'
           },
           {
