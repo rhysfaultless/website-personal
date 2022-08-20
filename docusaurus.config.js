@@ -119,7 +119,7 @@ const config = {
         },
       },
       footer: {
-        copyright: `Copyright © 2022 Rhys Faultless All rights reserved.`
+        copyright: `Copyright © 2022 Rhys Faultless. All rights reserved.`
       },
       prism: {
         theme: lightCodeTheme,
