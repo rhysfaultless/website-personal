@@ -4,4 +4,54 @@ title: Website Development
 sidebar_label: Overview
 ---
 
-testing
+Robots are starting to inculde User Interfaces to monitor and control them.
+These interfaces act as a brigde between User intentions, and the backend robotics control language (ROS, Python, C++, etc)
+
+:::note
+
+Refer to the [Software](/docs/software/overview_software) section for more details of robotics controls programming.
+
+:::
+
+There are two common ways of creating these interfaces:
+
+1. A native application for iOS or Android, written in Swift, Kotlin, or Java.
+2. A web application which runs in a browser like Chrome or Firefox. These are written in a framework for JavaScript, like React or Vue.
+
+Web applications are more flexible since they can be run on any device that has a modern browser, without needing to install anything.
+The downsides of this flexibility are:
+
+- That page scaling can cause odd issues like overlapping elements. 
+  You should test that your webpage's layout is clear on screensizes ranging from a phone to a desktop computer.
+- All your UI data needs to be transmitted through a network. 
+  Assume your robot is in a different building; all the webpage's informarion will need to travel over the internet from the robot to your device.
+  A native application only needs to collect database information, like the robot's diagnostics data, rather than all UI information.
+  The native application can do this because you had to download and install it as an application to your device.
+
+:::info
+
+This website will focus on web applications using JavaScript and React.
+
+Some information will be related to websites hosted by a server like [AWS](https://aws.amazon.com/), and some will relate to webpages hosted on a robot.
+
+:::
+
+:::note
+
+<center>
+  <h2>
+    Trademarks
+  </h2>
+</center>
+
+- _Android and Chrome are trademarks of [Google](https://www.google.com/)_
+- _AWS is a trademark of Amazon.com, Inc._
+- _Firefox is a trademark of [The Mozilla Foundation](https://foundation.mozilla.org/en/)_
+- _IOS is a trademark of [Cisco](https://www.cisco.com/) used under license by Apple Inc._
+- _Java and JavaScript are trademarks of [Oracle](https://www.oracle.com/)_
+- _Kotlin is a trademark of the [Kotlin Foundation](https://kotlinfoundation.org/)_
+- _React is a trademark of [Meta](https://about.facebook.com/)_
+- _Swift is a trademark of [Apple Inc.](https://www.apple.com/)_
+- _Vue is a trademark of [Vue Technology LLC](https://vuejs.org/)_
+
+:::
