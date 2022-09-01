@@ -34,3 +34,26 @@
    Note that I installed Docusaurus with the TypeScript flag, but you could also choose the default JavaScript.
 6. I deleted the generated README, and then copied all the other contencts of the Docusaurus folder _classic_ to the root of my project
 7. I started the local development server by running this in a terminal: <code>npm run start</code>
+
+## Equations using KaTex
+
+- [KaTex syntax](https://katex.org/docs/supported.html)
+- [KaTex tool for testing syntax](https://katex.org/)
+
+The packages are installed to your development computer or to the web server through the _package.json_ of this repository.
+These are installed when you run `npm install` after cloning the repository.
+Katex is sourced globally in _docusaurus.config.js_, so you do not need to import it to each page.
+
+### Example, Ohm's Law
+
+-  Rendered:
+   $$
+   I=\cfrac{V}{R}
+   $$
+
+-  Source:
+   ```
+   $$
+   I=\cfrac{V}{R}
+   $$
+   ```
