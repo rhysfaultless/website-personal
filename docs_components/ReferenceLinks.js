@@ -7,7 +7,7 @@ function ReferenceLink(props){
   const year = props.year;
   const title = props.title;
   return(
-    <p>[<a href={hyperlink}>{index}]</a>, {author}, {year}, {title}</p>
+    <p>[<a href={hyperlink}>{index}]</a> {author}, {year}, {title}</p>
   )
 }
 
