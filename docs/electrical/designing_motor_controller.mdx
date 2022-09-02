@@ -1,0 +1,124 @@
+---
+sidebar_position: 4
+title: Designing a BLDC Motor Controller
+sidebar_label: Design
+---
+
+import ReferenceLink from "/docs_components/ReferenceLinks"
+
+This page will detail the design cycle for a [Brushless DC](./motor_control/#motor_control_bldc) motor controller wo be used on a ROS2 robot.
+
+## Concept of Operations (ConOps)
+
+- [ ] Will be used on a differential drive, skid-steer robot
+- [ ] Each side of the robot will be driven by a BLDC motor
+- [ ] The robot will have a maximum mass of 200 kg
+- [ ] The robot should be capable of driving up 60° inclines, with an acceleration of 0.2 m/s<sup>2</sup>
+- [ ] Shall be powered by a 24 lead-acid or LiPO<sub>4</sub> battery, with a voltage range of 22 - 30 VDC
+- [ ] Shall shunt brake the motor when the controller is not powered (motion-stop state)
+- [ ] Will receive velocity commands from ROS2 topic `/cmd_vel` over a CAN or Ethernet connection
+- [ ] The controller shall be addressable, based on CAN or Ethernet choice (webpage, DIP switches, etc)
+- [ ] Robot shall travel up to 2.5 m/s with a wheel diameter of Ø320 mm (gearmotor output of 2.5 rev/s).
+- [ ] Assume a gear ratio of 30:1
+
+## Requirements
+
+- [ ] 16 A continuous operation.
+- [ ] 30 A maximum for peak loads.
+- [ ] Allowable input voltage of 22 - 30 VDC.
+- [ ] Controls a BLDC motor, with a hall-effect encoder.
+- [ ] Ethernet or CAN interface (one only).
+- [ ] Shall include mounting holes on a 80 mm X 80 mm grid for M5 screws (to mount to the robot chassis).
+- [ ] Electrical terminations shall be sufficient size for the 16 A continuous operation (ring terminal, PP15, etc).
+- [ ] Shall be capable of delivering 16 A continous current at a 3-phase motor speed of 75 rev/s.
+- [ ] Includes provisions for disipating heat (motor drive and motor braking).
+- [ ] 2 wire, 24 V brake control, with PWM circuit to reduce holding power consumption.
+- [ ] Target cost of less than $100 USD per controller, for a batch of 10.
+
+## Serch for an existing product
+
+I will not spend much time on this section, but it is key to really consider '_does this product already exist_'.
+You can never difinitively answer this question, but it it best to spend some time searching for a product would work for your application (even if it does not comply with all your defined requirements).
+The main question I ask is, 'will I be disapointed with my effort, if I find an off-the-shelf product resembling what I just spent a month designing?'
+
+:::note
+
+Change '_...a month designing_' to however long you will labour on your project.
+
+:::
+
+For this BLDC controller project, I could only find ROS2 products up to 8 A continuous current, or products not designed for ROS.
+I decided not to use a existing controller and write an interpretter for ROS2 because:
+
+- The unit cost per controller would be higher than my intended pricepoint.
+- My design is dependent on a single source for components.
+- As a small - medium manufacturer, I would not have influence over this OTS supplier, so they could make the BLDC controller obsolete without giving me time for a last-time-buy.
+- I had budgetted for the time to design, source, test, and QC a bespoke controller.
+
+## Conecepting
+
+<figure>
+  <center>
+    <img src="/img/electrical_images/bldc_controller_1.png" />
+    <figcaption>Representation of the circuit board to be designed</figcaption>
+  </center>
+</figure>
+
+Similar to any circuit design, the main concern is selecting the key components that will determine how well the final product aligns with the ConOps.
+The key components for this design will be:
+
+1. The BLDC control chip
+2. The microcontroller for:
+   -  Interfacing with the network (Ethernet or CAN)
+   -  Interpretting ROS messages
+   -  Commanding the BLDC chip
+
+There are other components that will impact the design, but they will not drive the success or failure of the product (unless impacted by component shortages or by becoming obsolete). 
+These include:
+
+- Connectors
+- Passive components (resistors, capacitory, diodes, etc)
+- Network components and amplifiers
+- Power conditioning
+- Power FETs
+
+### Choosing key components, the BLDC chip
+
+I started by reading papers and guides by manufacturers.
+These guides have a sight bias as they are marketing the manufacturer's own components, but the value outweighs that bias.
+For a small - medium scale manufacturer, the costs of design are a large aspect of total program cost.
+This means a guide that suggests higher cost components may be an acceptable cost for the design time savings.
+
+Reading papers from multiple manufacturers will help reduce the bias.
+
+---
+
+## References
+
+:::info
+
+<ReferenceLink 
+  index={"1"}
+  hyperlink={"https://www.ti.com/lit/an/slvaes1a/slvaes1a.pdf?ts=1661969244875&ref_url=https%253A%252F%252Fwww.google.com%252F"}
+  author={"Texas Instruments"}
+  year={"2020"}
+  title={"brushless-dc motor driver considerations and selection guide"}
+/>
+
+<ReferenceLink 
+  index={"2"}
+  hyperlink={"https://github.com/jkirsons/stealth-controller"}
+  author={"Gadget Workbench"}
+  year={"2021"}
+  title={"repository of an opensource PCBA with ROS2"}
+/>
+
+<ReferenceLink 
+  index={"3"}
+  hyperlink={"https://blog.trinamic.com/2021/01/14/controlling-brushless-motors-with-ros/"}
+  author={"Shubham Sharma for Robotiq"}
+  year={"2021"}
+  title={"controlling brushless motors with ros"}
+/>
+
+:::
