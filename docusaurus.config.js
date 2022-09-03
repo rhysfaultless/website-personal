@@ -1,10 +1,10 @@
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const math = require('remark-math');
+const katex = require('rehype-katex');
 
-/** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Rhys Faultless',
   url: 'https://your-docusaurus-test-site.com',
@@ -21,10 +21,11 @@ const config = {
   presets: [
     [
       'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          remarkPlugins: [math],
+          rehypePlugins: [katex],
         },
         blog: {
           showReadingTime: true,
@@ -46,52 +47,52 @@ const config = {
         },
         items: [
           {
-            to: '/docs/cm/overview_configuration_management',
+            to: '/docs/configuration_management',
             label: 'CM',
             position: 'left'
           },
           {
-            to: '/docs/systems/overview_systems',
+            to: '/docs/systems',
             label: 'Systems',
             position: 'left'
           },
           {
-            to: '/docs/mechanical/overview_mechanical',
+            to: '/docs/mechanical',
             label: 'Mechanical',
             position: 'left'
           },
           {
-            to: '/docs/electrical/overview_electrical',
+            to: '/docs/electrical',
             label: 'Electrical',
             position: 'left'
           },
           {
-            to: '/docs/building/overview_building',
+            to: '/docs/building',
             label: 'Build',
             position: 'left'
           },
           {
-            to: '/docs/networking/overview_networking',
+            to: '/docs/networking',
             label: 'Networking',
             position: 'left'
           },
           {
-            to: '/docs/software/overview_software',
+            to: '/docs/software',
             label: 'Software',
             position: 'left'
           },
           {
-            to: '/docs/web_development/overview_web_development',
+            to: '/docs/web_development',
             label: 'Web Dev',
             position: 'left'
           },
           {
-            to: '/docs/tools/overview_tools',
+            to: '/docs/tools',
             label: 'Tools',
             position: 'left'
           },
           {
-            to: '/docs/reference/overview_reference',
+            to: '/docs/reference',
             label: 'Reference',
             position: 'left'
           },
@@ -125,7 +126,16 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       }
-    }),
+    }
+  ),
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
+    },
+  ],
 };
 
 module.exports = config;

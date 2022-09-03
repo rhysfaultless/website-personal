@@ -1,0 +1,76 @@
+---
+sidebar_position: 2
+title: Ethernet
+sidebar_label: Ethernet
+---
+
+import ReferenceLink from "/docs_components/ReferenceLinks";
+
+Ethernet, TCP, and IP are hardware and protocols to send data between devices like computers, microcontrollers, and sensors.
+I see this as the most common way to connect devices for robotics applications, though other protocols like CAN are used.
+
+## Speed
+
+Ethernet typically connects two devices using a 8 wires.
+These wires are separated into twisted pairs, so a common cable will have 4 sets of twisted-pair wires.
+A twisted-pair has a send and a receive wire ( TX and RX ).
+The twisting is a way to reduce noise in the data, due to electro-magnetic interference.
+
+It is common to see a cable marked as _Cat 5_ or _Cat 6_.
+These CAT standards are related to how tight the twisting pitch is on the wires, and the rigor involved in adding connectors to the ends of the cable.
+_Cat 7_ has a tighter pitch than _Cat 6_, and _Cat 6_ has a tighter pitch than _Cat 5_.
+This tigher pitch minimizes induced noise when the data is deing sent at higher frequencies.
+
+- _Cat 4_ for 100 Mbit/s
+- _Cat 5_ for 1 Gbit/s
+- _Cat 6_ for 2.5 Gbit/s
+- _Cat 7_ for 10 Gbit/s
+- _Cat 8_ for 40 Gbi/s
+
+:::note
+
+These are just suggestions when quickly choosing a cable.
+For example, a _Cat 5_ cable can send data at 2.5 Gbit/s across a 3 metre cable, in a non-electrically-noisy environment.
+
+:::
+
+## Connectors
+
+- RJ45 connector, with 4 twisted-pairs arranged in a T568B termination order.
+  This is the most common connector for non-waterproof applications.
+  :::note
+
+  It does not matter if a cable is terminated in a T568A or T568B order, as long as both ends of the cable follow the same standard.
+  These considerations were more important when designers needed to consider crossover cables, and what device was upstream.
+  Crossover cables are not required anymore, since all modern computers, switches, and routers perform this crossover through hardware on their circuit boards.
+
+  :::
+
+- M8-A connector, with 2 twisted-pairs, and is limited to a 100 Mbit/s.
+- M8-D connector, with 2 twisted-pairs, and is limited to a 100 Mbit/s.
+- M12-D connector, with 2 twisted-pairs, and is limited to a 100 Mbit/s.
+- M12-X connector, with 4 twisted-pairs, for up to 10 Gbit/s.
+- MIL-DTL-38999 in a 23-09 arrangement, with 4 twisted pairs, for up to 1 Gbit/s speed, if there is only one connector along the connection path.
+- MIL-DTL-38999 with an RJ45 female connector inside it (called an RJF or RJFTV connector).
+  Speeds are dependent on the terminations inside the RJ45 connector, but are often designed for 1 Gbit/s.
+
+:::note
+
+Ethernet protocols can be emulated over USB and Thunderbolt connections.
+This is commonly seen with adapters with a male USB Type-C connector to a female RJ45.
+
+:::
+
+:::info
+
+## References
+
+<ReferenceLink
+  index={"1"}
+  hyperlink={"https://www.te.com/content/dam/te-com/documents/aerospace-defense-and-marine/white-papers/EvaluatingEthernetConnectors.Moore-Whitepaper.pdf"}
+  author={"Robert Moore"}
+  year={"2018"}
+  title={"evaluating connectors for gigabit and 10-gigabit ethernet in military and aerospace applications"}
+/>
+
+:::

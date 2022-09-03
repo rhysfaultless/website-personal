@@ -1,5 +1,125 @@
 ---
 sidebar_position: 3
+title: Git
+sidebar_title: Git
 ---
 
-# Git
+:::note
+
+Refer to [Git's website](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup) for more details about Git and its usage.
+
+:::
+
+## Git Intallation Process
+
+1.  [Download](https://git-scm.com/downloads) for your Operating System
+2.  Follow the installation process from the download
+3.  Open a terminal, and run:
+
+    ```
+    git config --global user.name "John Doe"
+    git config --global user.email johndoe@example.com
+    ```
+
+    Changing the name values to your actual settings used on GitHub, GitLab, or Bitbucket.
+    My settings are:
+
+    ```
+    git config --global user.name "Rhys Faultless"
+    git config --global user.email rhysfaultless@gmail.com
+    ```
+
+## GitHub Setup
+
+1.  Go to GitHub and create an account.
+2.  Login to your account on your browser.
+3.  Set up some form of authentication between your development computer and the remote repoistory (GitHub).
+    You can create this connection using:
+
+    - Personal Access Token
+    - SSH key
+    - Logging into GitHub with VS Code
+    - GitHub CLI
+
+There are lots of guides to set this up.
+Just be aware that certain workplaces or teams may require a specific type of connection, or commits will not be accepted.
+
+## Useful Extensions in VS Code
+
+1.  [Git Lens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) adds several graphical tools for using Git.
+    These are the features I use frequently:
+
+    - Showing remote and local branches in the Source Control area of VS Code
+    - Adds a _Compare References_ tools where you can compare versions of the same file side-by-side.
+      This allows you wo chose the file, and it's state after two different commits.
+    - A visual Git Rebase tool
+
+2.  [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) is a visual way to see the state of Branches.
+
+## Using Git in your VS Code workflow
+
+There are lots of video tutorials of this process, so I will just briefly jot down the two ways you will use Git:
+
+### Commits directly to the _Main_ branch
+
+The simplest process is commitng directly to your main branch, though this is not a great practice once you are familiar with Git.
+The process is:
+
+1.  Clone the repository to your local development computer.
+2.  In VS Code, select _File -> Open Folder_, and select the repository that you just cloned.
+3.  <br />
+
+    :::note
+
+    Skipping this line for structuring purposes.
+
+    :::
+
+4.  Make a change to a file.
+5.  Review the change in the Source Control area of VS Code
+6.  Click the _+_ button beside the file to add it to the change that you are packaging.
+7.  Type a commit message, describing what you changed.
+    These messages help reviewers understand what your change is attempting to accomplish.
+
+    :::tip
+
+    You can add multiple files to a single commit.
+    Only do this when multiple file changes are necessary to accomplish the goal described in the commit message.
+
+    :::
+
+    :::tip
+
+    Git restricts you to a message line of 50 characters max.
+    You can add new lines by pressing _Shift + Return_.
+
+    :::
+
+8.  Push the change to GitHub.
+
+### Commits to a Feature Development branch
+
+The process is similar to commiting directly to the Main branch, but this is like working on a save-as copy of the repository.
+This is important when there are other people working on the same repository as you, or when the main branch is used by your Production department to ship products.
+This branch method allows others to review your changes before merging them into the Main branch.
+The process is:
+
+1.  Clone the repository to your local development computer.
+2.  In VS Code, select _File -> Open Folder_, and select the repository that you just cloned.
+3.  Create a new branch.
+    You can do this by clicking the branch name in the bottom-left corner of VS Code.
+4.  Make a change to a file.
+5.  Review the change in the Source Control area of VS Code
+6.  Click the _+_ button beside the file to add it to the change that you are packaging.
+7.  Type a commit message, describing what you changed.
+8.  Push the change to GitHub.
+9.  Create a _Pull Request_ in GitHub.
+    This is the process of taking all the commited changes ou your Feature Branch, and adding them to another branch, like Main.
+    You can create the _Pull Request_ using either:
+    - [The GitHub extension for VS Code](https://code.visualstudio.com/docs/editor/github).
+    - From GitHub's website.
+      1.  Login to the website.
+      2.  Navigate to the repository.
+      3.  Go to the branches area.
+      4.  Click Create New Pull Request.
+10. The Pull Request will need to be reviewed and accepted before your changes get added to the Main branch.
