@@ -4,7 +4,7 @@ title: Designing a BLDC Motor Controller
 sidebar_label: Design
 ---
 
-import ReferenceLink from "/docs_components/ReferenceLinks"
+import ReferenceLink from "/docs_components/ReferenceLinks";
 
 This page will detail the design cycle for a [Brushless DC](./motor_control/#motor_control_bldc) motor controller wo be used on a ROS2 robot.
 
@@ -69,11 +69,11 @@ The key components for this design will be:
 
 1. The BLDC control chip
 2. The microcontroller for:
-   -  Interfacing with the network (Ethernet or CAN)
-   -  Interpretting ROS messages
-   -  Commanding the BLDC chip
+   - Interfacing with the network (Ethernet or CAN)
+   - Interpretting ROS messages
+   - Commanding the BLDC chip
 
-There are other components that will impact the design, but they will not drive the success or failure of the product (unless impacted by component shortages or by becoming obsolete). 
+There are other components that will impact the design, but they will not drive the success or failure of the product (unless impacted by component shortages or by becoming obsolete).
 These include:
 
 - Connectors
@@ -97,7 +97,7 @@ Reading papers from multiple manufacturers will help reduce the bias.
 
 :::info
 
-<ReferenceLink 
+<ReferenceLink
   index={"1"}
   hyperlink={"https://www.ti.com/lit/an/slvaes1a/slvaes1a.pdf?ts=1661969244875&ref_url=https%253A%252F%252Fwww.google.com%252F"}
   author={"Texas Instruments"}
@@ -105,7 +105,7 @@ Reading papers from multiple manufacturers will help reduce the bias.
   title={"brushless-dc motor driver considerations and selection guide"}
 />
 
-<ReferenceLink 
+<ReferenceLink
   index={"2"}
   hyperlink={"https://github.com/jkirsons/stealth-controller"}
   author={"Gadget Workbench"}
@@ -113,7 +113,7 @@ Reading papers from multiple manufacturers will help reduce the bias.
   title={"repository of an opensource PCBA with ROS2"}
 />
 
-<ReferenceLink 
+<ReferenceLink
   index={"3"}
   hyperlink={"https://blog.trinamic.com/2021/01/14/controlling-brushless-motors-with-ros/"}
   author={"Shubham Sharma for Robotiq"}

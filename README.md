@@ -4,20 +4,21 @@
 
 1. Writing helps me remember things.
 2. This allows me to store different types of data in a central place. ( Books, articles, my project insights, my preocesses).
-3. I can send links to other people. 
+3. I can send links to other people.
    I have found Trello and Docs to be great tools, but it is difficult to share the data that I have amassed using these tools.
 
 ## Deployment tools:
 
 1. [GitHub](https://github.com/)
 2. [Vercel](https://vercel.com/)
-3. [Namecheap](https://www.namecheap.com/) 
+3. [Namecheap](https://www.namecheap.com/)
 
 ## Webdevelopment tools:
 
 1. [React](https://reactjs.org/) with [Docusaurus](https://docusaurus.io/docs).
 2. [MDX markdown](https://mdxjs.com/) for React.
 3. [KaTex](https://katex.org/) for equations.
+
 ## Installation process for local development
 
 1. In system dependencies, common to most web development.
@@ -42,14 +43,15 @@ Katex is sourced globally in _docusaurus.config.js_, so you do not need to impor
 
 ### Example, Ohm's Law
 
--  Rendered:
-   $$
-   I=\cfrac{V}{R}
-   $$
+- Rendered:
 
--  Source:
-   ```
-   $$
-   I=\cfrac{V}{R}
-   $$
-   ```
+  $$
+  I=\cfrac{V}{R}
+  $$
+
+- Source:
+  ```
+  $$
+  I=\cfrac{V}{R}
+  $$
+  ```
