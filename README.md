@@ -13,7 +13,7 @@
 2. [Vercel](https://vercel.com/)
 3. [Namecheap](https://www.namecheap.com/)
 
-## Webdevelopment tools:
+## Web development tools:
 
 1. [React](https://reactjs.org/) with [Docusaurus](https://docusaurus.io/docs).
 2. [MDX markdown](https://mdxjs.com/) for React.
@@ -24,13 +24,13 @@
 1. In system dependencies, common to most web development.
    1. VS code, or similar editor.
    2. A shell / terminal configured to work with this GitHub repository.
-   3. Node.js version 16 or is installed.
+   3. Node.js version 16 or later is installed.
 2. Clone this repository.
 3. Open the folder in your text editor.
-4. In a terminal, navigate to the root of the project folder and `run npm install` to install everything listed in the _package.json_.
-5. Run `npm run start` to start a local webserver.
-6. A new tab should open in you default webbrowser to the landing page of the Docusaurus site.
-   The default address is <http://localhost:3000/> assuming you don't have any other local webservers running.
+4. In a terminal, navigate to the root of the project folder and run `npm install` to install everything listed in the _package.json_.
+5. Run `npm run start` to start a local web server.
+6. A new tab should open in you default web browser to the landing page of the Docusaurus site.
+   The default address is <http://localhost:3000/> assuming you don't have any other local web servers running.
 
 ## Equations using KaTex
 
