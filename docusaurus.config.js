@@ -103,7 +103,7 @@ const config = {
             position: 'right'
           },
           {
-            to: 'https://github.com/rhysfaultless',
+            to: 'https://github.com/rhysfaultless/website-personal',
             label: 'GitHub',
             position: 'right',
           },
