@@ -4,7 +4,11 @@ title: Designing a BLDC Motor Controller
 sidebar_label: Design
 ---
 
+import Admonition from "@theme/Admonition";
+import UnderConstruction from "/docs_components/underConstruction.mdx";
 import ReferenceLink from "/docs_components/ReferenceLinks";
+
+<UnderConstruction />
 
 This page will detail the design cycle for a [Brushless DC](./motor_control/#motor_control_bldc) motor controller wo be used on a ROS2 robot.
 
@@ -55,7 +59,7 @@ I decided not to use a existing controller and write an interpretter for ROS2 be
 - As a small - medium manufacturer, I would not have influence over this OTS supplier, so they could make the BLDC controller obsolete without giving me time for a last-time-buy.
 - I had budgetted for the time to design, source, test, and QC a bespoke controller.
 
-## Conecepting
+## Concepting
 
 <figure>
   <center>
@@ -95,7 +99,7 @@ Reading papers from multiple manufacturers will help reduce the bias.
 
 ## References
 
-:::info
+<Admonition type="info" icon=" " title=" ">
 
 <ReferenceLink
   index={"1"}
@@ -121,4 +125,4 @@ Reading papers from multiple manufacturers will help reduce the bias.
   title={"controlling brushless motors with ros"}
 />
 
-:::
+</Admonition>
