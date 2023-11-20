@@ -75,9 +75,6 @@ const config = {
           hideable: true
         },
       },
-      footer: {
-        copyright: `Copyright © 2022 Rhys Faultless. All rights reserved.`
-      },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
