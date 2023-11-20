@@ -58,14 +58,9 @@ const config = {
             position: 'right'
           },
           {
-            to: 'https://github.com/rhysfaultless/website-personal',
-            label: 'GitHub',
+            to: 'contact',
+            label: 'Contact',
             position: 'right',
-          },
-          {
-            to: 'https://www.linkedin.com/in/rhysfaultless/',
-            label: 'LinkedIn',
-            position: 'right'
           }
         ],
       },
