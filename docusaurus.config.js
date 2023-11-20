@@ -48,53 +48,8 @@ const config = {
         },
         items: [
           {
-            to: '/docs/configuration_management',
-            label: 'CM',
-            position: 'left'
-          },
-          {
-            to: '/docs/systems',
-            label: 'Systems',
-            position: 'left'
-          },
-          {
-            to: '/docs/mechanical',
-            label: 'Mechanical',
-            position: 'left'
-          },
-          {
-            to: '/docs/electrical',
-            label: 'Electrical',
-            position: 'left'
-          },
-          {
-            to: '/docs/building',
-            label: 'Build',
-            position: 'left'
-          },
-          {
-            to: '/docs/networking',
-            label: 'Networking',
-            position: 'left'
-          },
-          {
-            to: '/docs/software',
-            label: 'Software',
-            position: 'left'
-          },
-          {
-            to: '/docs/web_development',
-            label: 'Web Dev',
-            position: 'left'
-          },
-          {
-            to: '/docs/tools',
-            label: 'Tools',
-            position: 'left'
-          },
-          {
-            to: '/docs/reference',
-            label: 'Reference',
+            to: '/docs/notes',
+            label: 'Notes',
             position: 'left'
           },
           {
