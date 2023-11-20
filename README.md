@@ -19,6 +19,7 @@
 2. [MDX markdown](https://mdxjs.com/) for React.
 3. [KaTex](https://katex.org/) for equations.
 4. [Streamline UI components](https://home.streamlinehq.com/).
+5. [Infima](https://infima.dev), a style tool included with Docusaurus.
 
 ## Installation process for local development
 

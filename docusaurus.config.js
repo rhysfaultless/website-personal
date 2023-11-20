@@ -59,6 +59,11 @@ const config = {
             position: 'right'
           },
           {
+            to: 'experience',
+            label: 'Experience',
+            position: 'right'
+          },
+          {
             to: 'contact',
             label: 'Contact',
             position: 'right',
