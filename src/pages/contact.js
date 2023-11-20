@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "@theme/Layout";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import ThemedImage from '@theme/ThemedImage';
 
 const Contact = () => {
   const {siteConfig, siteMetadata} = useDocusaurusContext();
@@ -15,56 +16,66 @@ const Contact = () => {
             <div className="row row--no-gutters margin-top--xl margin-bottom--lg">
             
               <a href="https://maps.app.goo.gl/CRTYQWMvJres5XGx7" target="_blank" className="col">
-                <img
-                  alt="Map Pin, Waterloo, Canada"
+                <ThemedImage
+                  alt="Google Maps, Waterloo, Canada"
                   width={60}
                   height={60}
-                  src="/img/feather/map-pin.svg"
-                  loading="lazy"
+                  sources={{
+                    light: '/img/streamline/location-pin-3-black.svg',
+                    dark: '/img/streamline/location-pin-3-white.svg',
+                  }}
                 />
                 <p>Waterloo, Canada</p>
                 <br/>
               </a>
               <a href="mailto:hello@rhysfaultless.com" className="col">
-                <img
-                  alt="Email: hello@rhysfaultless.com"
+                <ThemedImage
+                  alt="Google Maps, Waterloo, Canada"
                   width={60}
                   height={60}
-                  src="/img/feather/mail.svg"
-                  loading="lazy"
+                  sources={{
+                    light: '/img/streamline/mail-send-envelope-black.svg',
+                    dark: '/img/streamline/mail-send-envelope-white.svg',
+                  }}
                 />
                 <p>hello@rhysfaultless.com</p>
                 <br/>
               </a>
               <a href="https://www.linkedin.com/in/rhysfaultless" target="_blank" className="col">
-                <img
-                  alt="Linkedin: @rhysfaultless"
+                <ThemedImage
+                  alt="LinkedIn, @rhysfaultless"
                   width={60}
                   height={60}
-                  src="/img/feather/linkedin.svg"
-                  loading="lazy"
+                  sources={{
+                    light: '/img/streamline/linkedin-logo-black.svg',
+                    dark: '/img/streamline/linkedin-logo-white.svg',
+                  }}
                 />
                 <p>@rhysfaultless</p>
                 <br/>
               </a>
               <a href="https://github.com/rhysfaultless" target="_blank" className="col">
-                <img
-                  alt="GitHub: @rhysfaultless-cpr"
+                <ThemedImage
+                  alt="GitHub: @rhysfaultless"
                   width={60}
                   height={60}
-                  src="/img/feather/github.svg"
-                  loading="lazy"
+                  sources={{
+                    light: '/img/streamline/github-logo-2-black.svg',
+                    dark: '/img/streamline/github-logo-2-white.svg',
+                  }}
                 />
                 <p>Personal, @rhysfaultless</p>
                 <br/>
               </a>
               <a href="https://github.com/rhysfaultless-cpr" target="_blank" className="col">
-                <img
+                <ThemedImage
                   alt="GitHub: @rhysfaultless-cpr"
                   width={60}
                   height={60}
-                  src="/img/feather/github.svg"
-                  loading="lazy"
+                  sources={{
+                    light: '/img/streamline/github-logo-2-black.svg',
+                    dark: '/img/streamline/github-logo-2-white.svg',
+                  }}
                 />
                 <p>Work, @rhysfaultess-cpr</p>
                 <br/>
