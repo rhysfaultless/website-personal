@@ -8,6 +8,7 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-card-background-color: #ebebebe7;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -20,4 +21,18 @@
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-card-background-color: #272727;
+}
+
+.experience-cards {
+  max-width: 600px;
+}
+
+h1.experience-card-heading {
+  padding-left: 15px;
+  padding-top:10px;
+}
+
+.experience-card-heading {
+  padding-left: 15px;
 }

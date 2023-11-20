@@ -1,7 +1,8 @@
 // @ts-check
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const {themes} = require('prism-react-renderer');
+const lightCodeTheme = themes.github;
+const darkCodeTheme = themes.dracula;
 const math = require('remark-math');
 const katex = require('rehype-katex');
 
@@ -48,53 +49,8 @@ const config = {
         },
         items: [
           {
-            to: '/docs/configuration_management',
-            label: 'CM',
-            position: 'left'
-          },
-          {
-            to: '/docs/systems',
-            label: 'Systems',
-            position: 'left'
-          },
-          {
-            to: '/docs/mechanical',
-            label: 'Mechanical',
-            position: 'left'
-          },
-          {
-            to: '/docs/electrical',
-            label: 'Electrical',
-            position: 'left'
-          },
-          {
-            to: '/docs/building',
-            label: 'Build',
-            position: 'left'
-          },
-          {
-            to: '/docs/networking',
-            label: 'Networking',
-            position: 'left'
-          },
-          {
-            to: '/docs/software',
-            label: 'Software',
-            position: 'left'
-          },
-          {
-            to: '/docs/web_development',
-            label: 'Web Dev',
-            position: 'left'
-          },
-          {
-            to: '/docs/tools',
-            label: 'Tools',
-            position: 'left'
-          },
-          {
-            to: '/docs/reference',
-            label: 'Reference',
+            to: '/docs/notes',
+            label: 'Notes',
             position: 'left'
           },
           {
@@ -103,14 +59,14 @@ const config = {
             position: 'right'
           },
           {
-            to: 'https://github.com/rhysfaultless/website-personal',
-            label: 'GitHub',
-            position: 'right',
+            to: 'experience',
+            label: 'Experience',
+            position: 'right'
           },
           {
-            to: 'https://www.linkedin.com/in/rhysfaultless/',
-            label: 'LinkedIn',
-            position: 'right'
+            to: 'contact',
+            label: 'Contact',
+            position: 'right',
           }
         ],
       },
@@ -119,9 +75,6 @@ const config = {
           autoCollapseCategories: true,
           hideable: true
         },
-      },
-      footer: {
-        copyright: `Copyright © 2022 Rhys Faultless. All rights reserved.`
       },
       prism: {
         theme: lightCodeTheme,
