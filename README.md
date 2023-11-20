@@ -18,6 +18,7 @@
 1. [React](https://reactjs.org/) with [Docusaurus](https://docusaurus.io/docs).
 2. [MDX markdown](https://mdxjs.com/) for React.
 3. [KaTex](https://katex.org/) for equations.
+4. [Streamline UI components](https://home.streamlinehq.com/).
 
 ## Installation process for local development
 
