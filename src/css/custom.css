@@ -24,6 +24,11 @@
   --ifm-card-background-color: #272727;
 }
 
+.simple-page {
+  max-width: 600px;
+  padding-top:50px;
+}
+
 .experience-cards {
   max-width: 600px;
 }
