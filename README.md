@@ -57,3 +57,33 @@ Katex is sourced globally in _docusaurus.config.js_, so you do not need to impor
   I=\cfrac{V}{R}
   $$
   ```
+## Vercel Analytics
+
+This site is deployed with Vercel, and uses their Analytics tool.
+Unlike a standard React site, Docusaurus does not expose an `_App.js` file.
+Vercel requires this top level file to run an Analytics function—only once—for all browsing of the React website.
+I added this functionality by Swizzling the Root of Docusaurus, by:
+
+- creating a folder /src/theme
+- creating a file /src/theme/Root.js
+
+Then I was able to run the `<Analytics />` function per [Vercel's guide](https://vercel.com/docs/analytics/quickstart).
+
+```javascript
+//  /src/theme/Root.js
+
+import React from 'react';
+import { Analytics } from '@vercel/analytics/react';
+
+function Root({children}) {
+  return (
+    <>
+      {children}
+      <Analytics />
+    </>
+  );
+}
+
+export default Root;
+
+```
