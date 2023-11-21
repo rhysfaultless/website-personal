@@ -51,9 +51,12 @@ const Experience = () => {
                 "and support for legacy products. ",
                 <br/>,
                 <br/>,
-                "I also researched documentation tools, and developed ",
+                "I also researched documentation tools, and set up ",
                 <a href="https://docs.clearpathrobotics.com/" className="underline hover:text-teal-600" target="_blank">docs.clearpathrobotics.com</a>, 
-                  " to simplify the process for maintaining Clearpath's public documentation."
+                  " to simplify the process for maintaining Clearpath's public documentation.",
+                "Note that much of the website's documentation was written by my colleagues, as seen in the ",
+                <a href="https://github.com/clearpathrobotics/cpr-documentation" className="underline hover:text-teal-600" target="_blank">GitHub repository's</a>,
+                " collaborators area."
               ]}
             />
             <ExperienceCard 
