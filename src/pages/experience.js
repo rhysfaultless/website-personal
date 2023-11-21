@@ -23,7 +23,7 @@ const Experience = () => {
                 <br/>,
                 <br/>,
                 "My progression from Engineer → Senior Engineer → Staff Engineer has been aligned with Will Larson's description in ",
-                <a href="https://staffeng.com/book" className="underline hover:text-teal-600" target="_blank">Staff Engineer</a>,
+                <a href="https://staffeng.com/book" target="_blank">Staff Engineer</a>,
                 ". I continue to do many of the same tasks as before, but spend more of my time writing documentation, and developing architecture for robots and tooling."
   
               ]}
@@ -35,9 +35,9 @@ const Experience = () => {
               experienceHyperlink="https://clearpathrobotics.com/"
               experienceDescription={[
                 "Some of the robotics projects worked on in this time were the ",
-                  <a href="https://clearpathrobotics.com/husky-observer/" className="underline hover:text-teal-600" target="_blank">Husky Observer</a>,
+                  <a href="https://clearpathrobotics.com/husky-observer/" target="_blank">Husky Observer</a>,
                   " and a ",
-                  <a href="https://youtu.be/QJdJ7nAmhzY?si=ApmOR5jSOnodK0ED" className="underline  hover:text-teal-600" target="_blank">retrofitted Polaris GEM</a>,
+                  <a href="https://youtu.be/QJdJ7nAmhzY?si=ApmOR5jSOnodK0ED" target="_blank">retrofitted Polaris GEM</a>,
                   " to be controlled with ROS. ",
 
                 "My tasks on these projects included: requirements definition, power budgets, ",
@@ -45,17 +45,17 @@ const Experience = () => {
                 <br/>,
                 <br/>,
                 "I also developed and documented ",
-                <a href="https://docs.clearpathrobotics.com/docs/robots/accessories/pacs" className="underline hover:text-teal-600" target="_blank">PACS—Platform Attachment Configuration System</a>,
+                <a href="https://docs.clearpathrobotics.com/docs/robots/accessories/pacs" target="_blank">PACS—Platform Attachment Configuration System</a>,
                 "—which is used for integrating robots. ",
                 "The outcome seemed simplistic, but development process required input from multiple stakeholders, ",
                 "and support for legacy products. ",
                 <br/>,
                 <br/>,
                 "I also researched documentation tools, and set up ",
-                <a href="https://docs.clearpathrobotics.com/" className="underline hover:text-teal-600" target="_blank">docs.clearpathrobotics.com</a>, 
+                <a href="https://docs.clearpathrobotics.com/" target="_blank">docs.clearpathrobotics.com</a>, 
                   " to simplify the process for maintaining Clearpath's public documentation.",
                 "Note that much of the website's documentation was written by my colleagues, as seen in the ",
-                <a href="https://github.com/clearpathrobotics/cpr-documentation" className="underline hover:text-teal-600" target="_blank">GitHub repository's</a>,
+                <a href="https://github.com/clearpathrobotics/cpr-documentation" target="_blank">GitHub repository's</a>,
                 " collaborators area."
               ]}
             />
@@ -67,16 +67,16 @@ const Experience = () => {
               experienceDescription={[
                 "This was the height of COVID-19 lockdowns, so lots of work became remote, and modular tasks. ",
                 "I integrated several robots, like this ",
-                  <a href="https://clearpathrobotics.com/blog/2021/10/behind-the-robot-rfid-inventory-scanning-robot/" className="underline hover:text-teal-600" target="_blank">Boxer UGV with RFID sensors</a>,
+                  <a href="https://clearpathrobotics.com/blog/2021/10/behind-the-robot-rfid-inventory-scanning-robot/" target="_blank">Boxer UGV with RFID sensors</a>,
                   ". ",
                 "Some were simple like the Boxer, but others were more complex, with many sensors and manipulators. ",
                 <br/>,
                 <br/>,
                 "I also defined the system requirements, and drafted concepts for the ",
-                  <a href="https://clearpathrobotics.com/turtlebot-4/" className="underline hover:text-teal-600" target="_blank">TurtleBot 4</a>,
+                  <a href="https://clearpathrobotics.com/turtlebot-4/" target="_blank">TurtleBot 4</a>,
                   ". ",
                 "This was a colaboration between Clearpath Robotics and ",
-                  <a href="https://www.openrobotics.org/" className="underline hover:text-teal-600" target="_blank">Open Robotics</a>,
+                  <a href="https://www.openrobotics.org/" target="_blank">Open Robotics</a>,
                   ".",
               ]}
             />
@@ -87,7 +87,7 @@ const Experience = () => {
               experienceHyperlink="https://www.peo.on.ca/"
               experienceDescription={[
                 "License Number ",
-                <a href="https://www.peo.on.ca/directory" className="underline hover:text-teal-600" target="_blank">100218635</a>,
+                <a href="https://www.peo.on.ca/directory" target="_blank">100218635</a>,
               ]}
             />
             <ExperienceCard 
@@ -97,7 +97,7 @@ const Experience = () => {
               experienceHyperlink="https://clearpathrobotics.com/"
               experienceDescription={[
                 "My initial work at Clearpath Robotics was the mechanical design of the ",
-                  <a href="https://youtu.be/cSoAOSEXeCY?si=_huGRxQM2YbesZz3" className="underline hover:text-teal-600" target="_blank">Moose UGV</a>,
+                  <a href="https://youtu.be/cSoAOSEXeCY?si=_huGRxQM2YbesZz3" target="_blank">Moose UGV</a>,
                   ". ",
                 "I used Solidworks to review robot assemblies, model brackets, and design rotating components. ",
                 <br/>,
@@ -109,7 +109,7 @@ const Experience = () => {
                 "Though the role was defined as Mechanical Designer, I wired robots, designed and built cables, ", 
                   "and configured sensors and computers. ",
                   "I also designed a PCBA with an Atmel microcontroller for the ",
-                  <a href="https://youtu.be/VjUAtPK3MVA?si=9W9cUYgaZsbFL-XO" className="underline hover:text-teal-600" target="_blank">Heron USV's Water Sampler</a>,
+                  <a href="https://youtu.be/VjUAtPK3MVA?si=9W9cUYgaZsbFL-XO" target="_blank">Heron USV's Water Sampler</a>,
                   ". The new PCBA was to simplify the manufacturing of the legacy Water Sampler product from 2016. ",
                   "I also updated the ROS driver for the Water Sampler to be compatable with ROS Melodic. "
               ]}
@@ -121,7 +121,7 @@ const Experience = () => {
               experienceHyperlink="https://app.gdls.com/"
               experienceDescription={[
                 "I was the main CAD maintainer for several vehicle variants being developed for the ",
-                  <a href="https://app.gdls.com/products/lav-700.html" className="underline hover:text-teal-600" target="_blank">LAV 700</a>,
+                  <a href="https://app.gdls.com/products/lav-700.html" target="_blank">LAV 700</a>,
                   " .",
                 <br/>,
                 <br/>,
@@ -143,7 +143,7 @@ const Experience = () => {
                 <br/>,
                 <br/>,
                 "I also designed the ",
-                <a href="https://app.gdls.com/products/lav-6.0.html" className="underline hover:text-teal-600" target="_blank">LAV 6's</a>,
+                <a href="https://app.gdls.com/products/lav-6.0.html" target="_blank">LAV 6's</a>,
                 " stowage subsystem, which stored troops's kit and supplies. ",
                 "This included brackets, hinged covers, and fabric tie down straps."
               ]}
