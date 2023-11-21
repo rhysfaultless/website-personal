@@ -12,7 +12,8 @@ const Experience = () => {
     >
       <main>
         <div className="container experience-cards">
-          <div className="column margin-top--xl margin-bottom--lg">
+          <div className="column simple-page">
+            <h1>Experience</h1>
             <ExperienceCard
               experienceYear="2023 - Present"
               experienceTitle="Staff System Engineer"
