@@ -13,6 +13,12 @@
       "verb": false
     },
     {
+      "word": "Bag",
+      "adjective": false,
+      "noun": true,
+      "verb": false
+    },
+    {
       "word": "Be",
       "adjective": false,
       "noun": false,
@@ -20,6 +26,168 @@
     },
     {
       "word": "Beach",
+      "adjective": false,
+      "noun": true,
+      "verb": false
+    },
+    {
+      "word": "Board",
+      "adjective": false,
+      "noun": true,
+      "verb": false
+    },
+    {
+      "word": "Book",
+      "adjective": false,
+      "noun": true,
+      "verb": true
+    },
+    {
+      "word": "Cave",
+      "adjective": false,
+      "noun": true,
+      "verb": false
+    },
+    {
+      "word": "Deck",
+      "adjective": false,
+      "noun": true,
+      "verb": false
+    },
+    {
+      "word": "Drawing",
+      "adjective": false,
+      "noun": true,
+      "verb": true
+    },
+    {
+      "word": "Drive",
+      "adjective": false,
+      "noun": true,
+      "verb": true
+    },
+    {
+      "word": "Guitar",
+      "adjective": false,
+      "noun": true,
+      "verb": false
+    },
+    {
+      "word": "Helicopter",
+      "adjective": false,
+      "noun": true,
+      "verb": false
+    },
+    {
+      "word": "House",
+      "adjective": false,
+      "noun": true,
+      "verb": true
+    },
+    {
+      "word": "Laptop",
+      "adjective": false,
+      "noun": true,
+      "verb": false
+    },
+    {
+      "word": "Light",
+      "adjective": false,
+      "noun": true,
+      "verb": false
+    },
+    {
+      "word": "Monitor",
+      "adjective": false,
+      "noun": true,
+      "verb": true
+    },
+    {
+      "word": "Phone",
+      "adjective": false,
+      "noun": true,
+      "verb": false
+    },
+    {
+      "word": "Plant",
+      "adjective": false,
+      "noun": true,
+      "verb": false
+    },
+    {
+      "word": "Pencil",
+      "adjective": false,
+      "noun": true,
+      "verb": false
+    },
+    {
+      "word": "Pot",
+      "adjective": false,
+      "noun": true,
+      "verb": false
+    },
+    {
+      "word": "Picture",
+      "adjective": false,
+      "noun": true,
+      "verb": false
+    },
+    {
+      "word": "Robot",
+      "adjective": false,
+      "noun": true,
+      "verb": false
+    },
+    {
+      "word": "Shelf",
+      "adjective": false,
+      "noun": true,
+      "verb": false
+    },
+    {
+      "word": "Snow",
+      "adjective": false,
+      "noun": true,
+      "verb": false
+    },
+    {
+      "word": "String",
+      "adjective": false,
+      "noun": true,
+      "verb": false
+    },
+    {
+      "word": "Table",
+      "adjective": false,
+      "noun": true,
+      "verb": false
+    },
+    {
+      "word": "Tree",
+      "adjective": false,
+      "noun": true,
+      "verb": false
+    },
+    {
+      "word": "Truck",
+      "adjective": false,
+      "noun": true,
+      "verb": false
+    },
+    {
+      "word": "Television",
+      "adjective": false,
+      "noun": true,
+      "verb": false
+    },
+    {
+      "word": "Wall",
+      "adjective": false,
+      "noun": true,
+      "verb": false
+    },
+    {
+      "word": "Zoo",
       "adjective": false,
       "noun": true,
       "verb": false
