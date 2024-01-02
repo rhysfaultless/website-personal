@@ -19,7 +19,7 @@ export default function ProjectNameGenerator() {
 
   return (
       <div className="name-generator">
-          <button onClick={helperProjectNameGenerator}>Name Generator</button>
+          <button onClick={helperProjectNameGenerator}>Click For A New Name</button>
           <p>{firstWord}{secondWord}</p>
       </div>
   )
