@@ -1,0 +1,28 @@
+{
+  "words": [
+    {
+      "word": "Acrobat",
+      "adjective": false,
+      "noun": true,
+      "verb": false
+    },
+    {
+      "word": "Africa",
+      "adjective": false,
+      "noun": true,
+      "verb": false
+    },
+    {
+      "word": "Be",
+      "adjective": false,
+      "noun": false,
+      "verb": true
+    },
+    {
+      "word": "Beach",
+      "adjective": false,
+      "noun": true,
+      "verb": false
+    }
+  ]
+}
