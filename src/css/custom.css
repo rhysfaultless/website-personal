@@ -41,3 +41,7 @@ h1.experience-card-heading {
 .experience-card-heading {
   padding-left: 15px;
 }
+
+.name-generator {
+  text-align: center;
+}
