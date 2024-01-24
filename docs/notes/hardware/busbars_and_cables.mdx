@@ -1,0 +1,46 @@
+---
+sidebar_position: 7
+title: Bus Bars and Cables
+sidebar_label: Bus Bars & Cables
+---
+
+## Background
+
+Bus bars and cables are electrical conductors, that move current from _Point A→Point B_.
+
+### Bus Bars
+
+A bus bar is a shape made from a sheet of copper.
+It typically has holes for where is terminates, at its simplest it has a hole for _Point A_ and one for _Point B_.
+Depending on the complexity of where _Point A_ and _Point B_ are relative to eachother, the bus bar may have bends, and insulating material.
+
+### Cables
+
+Cables and Wires are synonymous for this description
+(_though cables sometimes refer to routings with multiple wires wrapped in a single jacket_).
+For this desription; a Cable is a single confuctor, with an insulating jacket.
+In mobile robotics, a cable is always stranded, since solid core cables fail over time due to fatigue from vibration.
+Cables are rarely soldered or welded at their termination, _Points A_ and _B_.
+Cables that conduct large currents are terminated with a crimp, like a Ring Terminal or Lug.
+
+## Compare
+
+Both bus bars and calbes accomplish the main goal, of moving an electric current from _Point A_ to _Point B_.
+Choosing between the two is often an intuitive design decision, but these are the main TODO to consider in this trade study:
+
+| Consideration              | Bus Bar                                                                                                                                                                            | Cable                                                                                                                                                                                                                                             |
+| :------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Electrical Functionality   | <ul><li>Many thicknesses and widths of copper bar</li><li>Many thicknesses of copper sheet and plate</li></ul>                                                                     | <ul><li>Many options in both AWG and mm²</li></ul>                                                                                                                                                                                                |
+| Electical Termaination     | <ul><li>Thru holes</li><li>Threaded holes</li><li>Captive, pressed fasteners</li><li>Captive, pressed termainals, like Methode Power Solution's _Embedded Bud Connector_</li></ul> | <ul><li>Many, including Ring Terminals and Lugs</li></ul>                                                                                                                                                                                         |
+| Mechanical Movement        | <ul><li>Not intended to move in service</li></ul>                                                                                                                                  | <ul><li>Can move in service, but number of lifetime movements, and bend radius should be considered. The cable manufacturer's datasheet should include some allowable operating conditions</li></ul>                                              |
+| Space Claim                | <ul><li></li></ul>                                                                                                                                                                 | <ul><li></li></ul>                                                                                                                                                                                                                                |
+| Design Time                | <ul><li>3D modeling time</li><li>drafting time</li><li>configuration management time</li></ul>                                                                                     | <ul><li>drafting time</li><li>configuration management time</li></ul>                                                                                                                                                                             |
+| Build Time, Component      | <ul><li></li></ul>                                                                                                                                                                 | <ul><li></li></ul>                                                                                                                                                                                                                                |
+| Build Time, System         | <ul><li></li></ul>                                                                                                                                                                 | <ul><li></li></ul>                                                                                                                                                                                                                                |
+| Quality Control, Component | <ul><li></li></ul>                                                                                                                                                                 | <ul><li></li></ul>                                                                                                                                                                                                                                |
+| Quality Assurance, System  | <ul><li></li></ul>                                                                                                                                                                 | <ul><li></li></ul>                                                                                                                                                                                                                                |
+| Material Cost              | <ul><li></li></ul>                                                                                                                                                                 | <ul><li></li></ul>                                                                                                                                                                                                                                |
+| Item Number Markings       | <ul><li>Heat shrink label</li><li>Laser etching the copper</li><li>Stamping or engraving the copper</li></ul>                                                                      | <ul><li>Heat shrink label</li></ul>                                                                                                                                                                                                               |
+| Colour Coating             | <ul><li>Heat shrink tubing</li><li>Powder coating</li></ul>                                                                                                                        | <ul><li>Cable's insulating jacket colour</li><li>Heat shrink tubing</li></ul>                                                                                                                                                                     |
+| Oxidation                  | <ul><li>Bare copper joints need polishing before installation</li><li>Bus bar can be plated to reduce oxidation concerns</li></ul>                                                 | <ul><li>Manufacturers offer cable material with plated strands</li><li>Crimped terminals should exclude air from joint</li><li>Adhesive heat shrink tubing near the crimp can exclude air from the conductors inside the cable's jacket</li></ul> |
+| Operating Temperature      | <ul><li>Bus bars with a powder coating or heat shrink tube have similar limitations to cables.</li></ul>                                                                           | <ul><li>Most cables are limited to an operating temperature of 90°C due to the insulation jacket material. Refer to the cable manufacturer's datasheet, since some cables have a higher acceptable operating temperature.</li></ul>               |
