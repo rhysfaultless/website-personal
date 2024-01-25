@@ -23,7 +23,7 @@ const Experience = () => {
                 "None of my current projects are in the public domain, so I cannot mention them here.",
                 <br/>,
                 <br/>,
-                "My progression from Engineer → Senior Engineer → Staff Engineer has been aligned with Will Larson's description in ",
+                "My progression from Engineer ⟶ Senior Engineer ⟶ Staff Engineer has been aligned with Will Larson's description in ",
                 <a href="https://staffeng.com/book" target="_blank">Staff Engineer</a>,
                 ". I continue to do many of the same tasks as before, but spend more of my time writing documentation, and developing architecture for robots and tooling."
   

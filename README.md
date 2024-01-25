@@ -34,6 +34,23 @@
 6. A new tab should open in you default web browser to the landing page of the Docusaurus site.
    The default address is <http://localhost:3000/> assuming you don't have any other local web servers running.
 
+## Markdown formatting
+
+To make the Markdown code easier to read, I am using [Prettier](https://prettier.io/) to format the files before committing them.
+The details of the Markdown code formatting rules are described in the file `/.prettierrc.json`.
+
+To format a file, run:
+
+```
+npx prettier --write <FILE PATH>
+```
+
+For example, to format this README file locally, run this command from the repository's root:
+
+```
+npx prettier --write README.md
+```
+
 ## Equations using KaTex
 
 - [KaTex syntax](https://katex.org/docs/supported.html)
