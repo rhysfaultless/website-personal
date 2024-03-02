@@ -49,7 +49,7 @@ const config = {
         },
         items: [
           {
-            to: '/docs',
+            to: '/docs/notes',
             label: 'Notes',
             position: 'left'
           },
