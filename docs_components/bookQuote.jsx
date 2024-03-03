@@ -13,7 +13,7 @@ export default function ExperienceCard(props) {
       title=" "
     >
       <p>{props.quote}</p>
-      <em>—P.6</em>
+      <em>—P.{props.page}</em>
     </Admonition>
   )
 }
