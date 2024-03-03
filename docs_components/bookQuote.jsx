@@ -5,7 +5,7 @@
 
 import Admonition from "@theme/Admonition";
 
-export default function ExperienceCard(props) {
+export default function BookQuote(props) {
   return (
     <Admonition
       type="note"
