@@ -1,4 +1,4 @@
-//  docs_components/bookQuote.js
+//  docs_components/bookQuote.jsx
 //  props
 //    quote
 //    page
