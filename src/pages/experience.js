@@ -25,8 +25,21 @@ const Experience = () => {
                 <br/>,
                 "My progression from Engineer ⟶ Senior Engineer ⟶ Staff Engineer has been aligned with Will Larson's description in ",
                 <a href="https://staffeng.com/book" target="_blank">Staff Engineer</a>,
-                ". I continue to do many of the same tasks as before, but spend more of my time writing documentation, and developing architecture for robots and tooling."
-  
+                ". I continue to perform many of the same tasks as before, but I spend more of my time writing documentation, and developing architecture for robots and tooling.",
+                <br/>,
+                <br/>,
+                
+                "Here are some small tasks I performed in this time: ",
+                <br/>,
+                
+                "· Using Grafana and SQL for a ",
+                <a href="https://github.com/rhysfaultless-cpr/air_velocity_testing" target="_blank">test setup</a>,
+                ".",
+                <br/>,
+                
+                "· Updating a ",
+                <a href="https://github.com/clearpathrobotics/numato_relay" target="_blank">USB-relay's driver</a>,
+                " from ROS 1 to ROS 2."
               ]}
             />
             <ExperienceCard 
@@ -35,27 +48,27 @@ const Experience = () => {
               experienceCompany="Clearpath Robotics"
               experienceHyperlink="https://clearpathrobotics.com/"
               experienceDescription={[
-                "Some of the robotics projects worked on in this time were the ",
+                "Some of the robotics projects I worked on in this time were; the ",
                   <a href="https://clearpathrobotics.com/husky-observer/" target="_blank">Husky Observer</a>,
-                  " and a ",
+                  ", and a ",
                   <a href="https://youtu.be/QJdJ7nAmhzY?si=ApmOR5jSOnodK0ED" target="_blank">retrofitted Polaris GEM</a>,
                   " to be controlled with ROS. ",
 
                 "My tasks on these projects included: requirements definition, power budgets, ",
-                  "wiring diagrams, cable drawings, mechanical drawings, and building robots. ",
+                  "wiring diagrams, cable drawings, mechanical drawings, building robots, testing hte systems, and commissioning them with end customers. ",
                 <br/>,
                 <br/>,
                 "I also developed and documented ",
                 <a href="https://docs.clearpathrobotics.com/docs/robots/accessories/pacs" target="_blank">PACS—Platform Attachment Configuration System</a>,
                 "—which is used for integrating robots. ",
-                "The outcome seemed simplistic, but development process required input from multiple stakeholders, ",
+                "The outcome seems simplistic, but the development process required input from multiple stakeholders, ",
                 "and support for legacy products. ",
                 <br/>,
                 <br/>,
-                "I also researched documentation tools, and set up ",
+                "I also researched website documentation tools, and set up ",
                 <a href="https://docs.clearpathrobotics.com/" target="_blank">docs.clearpathrobotics.com</a>, 
-                  " to simplify the process for maintaining Clearpath's public documentation.",
-                "Note that much of the website's documentation was written by my colleagues, as seen in the ",
+                  " to simplify the process of maintaining Clearpath's public documentation.",
+                " Note that much of the website's documentation was written by my colleagues, as seen in the ",
                 <a href="https://github.com/clearpathrobotics/cpr-documentation" target="_blank">GitHub repository's</a>,
                 " collaborators area."
               ]}
@@ -66,17 +79,17 @@ const Experience = () => {
               experienceCompany="Clearpath Robotics"
               experienceHyperlink="https://clearpathrobotics.com/"
               experienceDescription={[
-                "This was the height of COVID-19 lockdowns, so lots of work became remote, and modular tasks. ",
-                "I integrated several robots, like this ",
+                "This was the height of COVID-19 lockdowns, so lots of work became remote, with engineers performing modular / discrete tasks. ",
+                "During this time, I integrated several robots, such as this ",
                   <a href="https://clearpathrobotics.com/blog/2021/10/behind-the-robot-rfid-inventory-scanning-robot/" target="_blank">Boxer UGV with RFID sensors</a>,
                   ". ",
-                "Some were simple like the Boxer, but others were more complex, with many sensors and manipulators. ",
+                "Some robot integrations were simple like the Boxer, but others were more complex, with many sensors and manipulators. ",
                 <br/>,
                 <br/>,
                 "I also defined the system requirements, and drafted concepts for the ",
                   <a href="https://clearpathrobotics.com/turtlebot-4/" target="_blank">TurtleBot 4</a>,
                   ". ",
-                "This was a colaboration between Clearpath Robotics and ",
+                "This was a collaboration between Clearpath Robotics and ",
                   <a href="https://www.openrobotics.org/" target="_blank">Open Robotics</a>,
                   ".",
               ]}
