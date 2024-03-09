@@ -27,7 +27,8 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           remarkPlugins: [math],
           rehypePlugins: [katex],
-          showLastUpdateTime: true
+          showLastUpdateTime: true,
+          routeBasePath: '/',
         },
         blog: {
           showReadingTime: true,
@@ -48,11 +49,6 @@ const config = {
           src: 'img/favicon.png',
         },
         items: [
-          {
-            to: '/docs/notes',
-            label: 'Notes',
-            position: 'left'
-          },
           {
             to: 'about',
             label: 'About',
